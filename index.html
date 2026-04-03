@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MK Vilas | Restaurant, Private Theater & Function Hall</title>
+    <meta
+      name="description"
+      content="MK Vilas in Kothavalasa offers a restaurant, private theater experience, and function hall bookings."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar container">
+        <p class="brand">MK Vilas</p>
+        <div class="nav-actions">
+          <a class="pill" href="#services">Services</a>
+          <a class="pill" href="#booking">Book Now</a>
+          <a
+            class="pill"
+            href="https://www.google.com/maps/place/MK+Vilas/@17.8941804,83.1824817,15z/data=!4m15!1m8!3m7!1s0x3a3961a2aa8ac549:0xfd4d1a20b7ebcdfb!2sKothavalasa,+Andhra+Pradesh!3b1!8m2!3d17.8899871!4d83.1903382!16zL20vMGY1OWxz!3m5!1s0x3a3961d0e8f0ebc1:0x6b28e50133ffacaf!8m2!3d17.8967894!4d83.1855033!16s%2Fg%2F11wxs_sm5k"
+            target="_blank"
+            rel="noreferrer"
+            >Maps</a
+          >
+        </div>
+      </nav>
+
+      <div class="container hero-content">
+        <p class="eyebrow">Kothavalasa, Andhra Pradesh</p>
+        <h1>Your destination for dining, celebrations & private screening.</h1>
+        <p class="lead">
+          MK Vilas is a complete venue for family dining, private theater
+          experiences, and function hall events like birthdays, engagements,
+          receptions, and corporate gatherings.
+        </p>
+        <div class="hero-cta">
+          <a
+            class="cta"
+            href="https://www.google.com/maps/dir/?api=1&destination=17.8967894,83.1855033"
+            target="_blank"
+            rel="noreferrer"
+            >Get Directions</a
+          >
+          <a class="cta cta-secondary" href="#booking">Check Availability</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="grid services-grid">
+          <article class="card">
+            <h3>Restaurant</h3>
+            <p>
+              Multi-cuisine dining with comfortable seating for families and
+              groups.
+            </p>
+            <ul>
+              <li>Veg & Non-Veg Menu</li>
+              <li>Lunch and Dinner</li>
+              <li>Group Table Reservations</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Private Theater</h3>
+            <p>
+              Enjoy movies, match screenings, or special surprise events in a
+              private viewing room.
+            </p>
+            <ul>
+              <li>Couple / Family Slots</li>
+              <li>Birthday Surprise Setups</li>
+              <li>Flexible Time Blocks</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Function Hall</h3>
+            <p>
+              Host small-to-medium events with customizable seating and decor
+              support.
+            </p>
+            <ul>
+              <li>Birthdays & Receptions</li>
+              <li>Engagements & Parties</li>
+              <li>Catering Coordination</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-col">
+        <article class="card">
+          <h2>Why Choose MK Vilas?</h2>
+          <ul>
+            <li>One location for food + entertainment + event hosting.</li>
+            <li>Easy access in Kothavalasa with map navigation support.</li>
+            <li>Friendly staff for custom packages and event planning.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Location</h2>
+          <p>
+            Coordinates: <strong>17.8967894, 83.1855033</strong>
+          </p>
+          <div class="map-wrap">
+            <iframe
+              title="MK Vilas map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=17.8967894,83.1855033&z=16&output=embed"
+            ></iframe>
+          </div>
+        </article>
+      </section>
+
+      <section id="booking" class="section">
+        <h2>Booking Request</h2>
+        <p class="muted">
+          Share your requirements and our team will contact you.
+        </p>
+        <form class="booking-form" id="booking-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required />
+          </label>
+          <label>
+            Service
+            <select name="service" required>
+              <option value="">Choose one</option>
+              <option>Restaurant</option>
+              <option>Private Theater</option>
+              <option>Function Hall</option>
+            </select>
+          </label>
+          <label>
+            Event Date
+            <input type="date" name="eventDate" required />
+          </label>
+          <label class="full-width">
+            Notes
+            <textarea
+              name="notes"
+              rows="4"
+              placeholder="Guests count, occasion, preferred time..."
+            ></textarea>
+          </label>
+          <button type="submit" class="cta">Send Enquiry</button>
+        </form>
+        <p id="form-message" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>© <span id="year"></span> MK Vilas</p>
+        <p>Restaurant • Private Theater • Function Hall</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
